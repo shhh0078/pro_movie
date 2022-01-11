@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './Home'
 import About from './About'
+import Movie from './Movie'
 
 // main.js에서 router라는 이름으로 받아서 하나의 플러그인으로 현재 프로젝트에 적용
 export default createRouter({
@@ -28,5 +29,9 @@ export default createRouter({
       path: '/about',
       component: About
     },
+    {
+      path: '/movie',
+      component: Movie
+    }
   ]
 })
